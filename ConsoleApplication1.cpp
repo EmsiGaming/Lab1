@@ -7,6 +7,6 @@ void main()
         using namespace std::cout;
 	string name;
 	cout << "Enter your name!\n";
-	cin >> name;
-	cout << "Your name is " << name;
+	std::getline(cin >> std::ws, name);
+	cout << "Your name is " << name + "!";
 }
